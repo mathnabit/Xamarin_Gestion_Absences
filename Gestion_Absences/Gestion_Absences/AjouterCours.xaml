@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gestion_Absences.AjouterCours"
+             Padding="5"
+             BackgroundColor="#FC7F3C">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#FC7F3C">
+                <Image Source="book.png" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
+
+                <ListView x:Name="ListeCours"></ListView>
+                
+                <Entry Placeholder="tapez cours" x:Name="nomCours" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="tapez nombre de seances" x:Name="nbreSeances" HorizontalOptions="FillAndExpand"/>
+                
+                <Button Text="Ajoutez" Clicked="Ajouter_Cours"></Button>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

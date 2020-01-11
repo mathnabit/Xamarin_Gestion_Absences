@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Gestion_Absences"
+             x:Class="Gestion_Absences.MainPage"
+             BackgroundColor="#FC7F3C">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <!--<Label Text="Bienvenu dans  gestion des absences!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />-->
+        <StackLayout>
+            
+            <Image Source="login.png" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
+            <Entry Placeholder="Enter login" x:Name="log"/>
+            <Entry Placeholder="Enter password" x:Name="pass" IsPassword="true"/>
+
+            <Button Text="login" Clicked="ouvrir_home" x:Name="btnLogin" ></Button>
+            <Button Text="sign up" Clicked="ouvrir_inscrp" x:Name="btnInscrp" ></Button>
+            
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>

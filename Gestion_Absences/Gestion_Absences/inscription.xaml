@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gestion_Absences.inscription"
+             BackgroundColor="#FC7F3C">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FC7F3C">
+            
+            <StackLayout>
+
+                <Image Source="register.png" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
+                <Entry Placeholder="tapez login" x:Name="nom" />
+                <Entry Placeholder="tapez password" x:Name="mdp" IsPassword="true"/>
+                <Entry Placeholder="retapez password" x:Name="mdp2" IsPassword="true"/>
+                
+                <Button Text="register" Clicked="Add_Prof"></Button>
+
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

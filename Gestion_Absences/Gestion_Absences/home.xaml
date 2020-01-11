@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gestion_Absences.home"
+             Padding="10"
+             BackgroundColor="#FC7F3C">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FC7F3C">
+            <Image Source="home.png" HorizontalOptions="Center"  HeightRequest="50" WidthRequest="50"/>
+
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Button Text="Absence"  x:Name="btnAbsence" TextColor="Blue" BackgroundColor="#BD8D46" CornerRadius="5" WidthRequest="180" HeightRequest="40"></Button>
+                <Image Source="login.png" HorizontalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Button Text="+ Etudiant" x:Name="btnEtudiant" TextColor="Blue" BackgroundColor="#BD8D46" CornerRadius="5" WidthRequest="180" HeightRequest="40"></Button>
+                <Image Source="login.png" HorizontalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Button Text="+ Cours" x:Name="btnCours" TextColor="Blue" BackgroundColor="#BD8D46" CornerRadius="5" WidthRequest="180" HeightRequest="40"></Button>
+                <Image Source="login.png" HorizontalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Button Text="Recherche"  x:Name="btnRecherche" TextColor="Blue" BackgroundColor="#BD8D46" CornerRadius="5" WidthRequest="180" HeightRequest="40"></Button>
+                <Image Source="login.png" HorizontalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="5">
+                <Button Text="logout" x:Name="btnLogout" TextColor="Blue" BackgroundColor="#BD8D46" CornerRadius="5" WidthRequest="180" HeightRequest="40"></Button>
+                <Image Source="login.png" HorizontalOptions="Center" HeightRequest="20" WidthRequest="20"/>
+            </StackLayout>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

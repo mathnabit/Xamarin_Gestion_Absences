@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gestion_Absences.AjouterEtudiant"
+             Padding="5"
+             BackgroundColor="#FC7F3C">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#FC7F3C">
+            
+            <Image Source="student.png" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
+
+            <Entry Placeholder="tapez cne" x:Name="cne" HorizontalOptions="FillAndExpand"/>
+
+            <Entry Placeholder="tapez nom" x:Name="nomEtud" HorizontalOptions="FillAndExpand"/>
+
+            <Entry Placeholder="tapez prenom" x:Name="prenomEtud" HorizontalOptions="FillAndExpand"/>
+
+            <Entry Placeholder="tapez email" x:Name="email" HorizontalOptions="FillAndExpand"/>
+
+            <Entry Placeholder="tapez telephone" x:Name="tele" HorizontalOptions="FillAndExpand"/>
+
+            <!--<Entry Placeholder="tapez filiere" x:Name="filiere"  HorizontalOptions="FillAndExpand"/>-->
+
+            <Picker x:Name="MesFilieres" Title="selectionnez une filiere"></Picker>
+
+            <Picker x:Name="MesCours" Title="selectionnez un cours"></Picker>
+
+            <Button Text="Ajoutez" Clicked="Ajouter_Etudiant"></Button>
+            
+        </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

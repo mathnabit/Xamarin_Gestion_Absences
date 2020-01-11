@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gestion_Absences.Absence"
+             BackgroundColor="#FC7F3C">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FC7F3C">
+            
+            <StackLayout Orientation="Horizontal">
+                
+                <Picker x:Name="MesCours" Title="Cours"></Picker>
+                <Picker x:Name="MesFiliere" Title="Filiere"></Picker>
+                <Button Text="Affichez" Clicked="Afficher_Etudiants"></Button>
+            </StackLayout>
+
+
+            <ListView x:Name="Etudiants">
+                
+               
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
